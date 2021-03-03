@@ -2,6 +2,10 @@
 <html>
     <head>
         <title>Bear Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
  
 <body>
@@ -9,26 +13,30 @@
 <h2>Himaja Parachuri builds a bear</h2>
 
 <form>
-    <input type="checkbox" id="hat" name="hat"  value="hat" >
-    <label for="hat">hat</label></br>
-  
-    <input type="checkbox" id="scarf" name="scarf" value="scarf">
-    <label for="scarf">scarf</label></br>
-  
-    <input type="checkbox" id="shirt" name="shirt" value="shirt" >
-    <label for="shirt">shirt</label></br>
-
-    <input type="button" onclick="startbear()" value="Start a bear">
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="hat" name="hat"  value="hat" >
+    <label class="form-check-label" for="hat">hat</label></br>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="scarf" name="scarf" value="scarf">
+    <label class="form-check-label" for="scarf">scarf</label></br>
+    </div>
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="shirt" name="shirt" value="shirt" >
+    <label class="form-check-label" for="shirt">shirt</label></br>
+    </div>
+    <input type="button" class="btn btn-primary"  onclick="startbear()" value="Start a bear">
 </form>
 
 <form>
+    <div class="form-group">
     <label for="property">Enter a property</label>
-    <input type ="text" id="property" name="property" value="color"></br>
+    <input type ="text" class="form-control" id="property" name="property" value="color"></br>
     
     <label for="value">Enter a value</label>
-    <input type ="text" id="value" name="value"></br>
-
-    <input type="button" onclick="updatebear()" value="Update the bear">
+    <input type ="text" class="form-conrol" id="value" name="value"></br>
+     </div>
+    <input type="button" class="btn btn-primary" onclick="updatebear()" value="Update the bear">
 
 </form>
   
